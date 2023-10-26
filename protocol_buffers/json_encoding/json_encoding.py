@@ -3,9 +3,8 @@ A module for json encoding in the protocol_buffers.json encoding package.
 """
 from datetime import datetime
 
-from google.protobuf.json_format import MessageToJson
-
 import rides_pb2 as pb
+from google.protobuf.json_format import MessageToJson
 
 request = pb.StartRequest(
     car_id=95,
