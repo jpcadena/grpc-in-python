@@ -71,7 +71,7 @@ google-api-python-client = "^2.106.0"
 grpcio = "^1.59.2"
 grpcio-reflection = "^1.59.2"
 grpcio-tools = "^1.59.2"
-protobuf = "^4.24.4"
+protobuf = "^4.25.0"
 types-protobuf = "^4.24.0.4"
 
 
@@ -110,6 +110,7 @@ exclude = '''
   | venv
   | tests)/
   | .*_pb2\\.py$
+  | .*_pb2_grpc\\.py$
 )
 '''
 skip-string-normalization = true
@@ -120,7 +121,7 @@ strict = true
 show_error_codes = true
 warn_redundant_casts = true
 warn_unused_ignores = true
-exclude = ".venv|venv|tests|cache|.mypy_cache|.ruff_cache|.pytest_cache|.*_pb2\\.py$"
+exclude = ".venv|venv|tests|cache|.mypy_cache|.ruff_cache|.pytest_cache|.*_pb2\\.py$|.*_pb2_grpc\\.py$"
 disallow_any_generics = true
 disallow_subclassing_any = true
 disallow_untyped_calls = true
@@ -212,7 +213,8 @@ exclude = [
     "dist",
     "node_modules",
     "venv",
-    ".*_pb2\\.py$"
+    ".*_pb2\\.py$",
+    ".*_pb2_grpc\\.py$"
 ]
 line-length = 80
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
