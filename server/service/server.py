@@ -13,6 +13,8 @@ import validate
 from grpc._server import _Server as Server
 from grpc_reflection.v1alpha import reflection
 
+from server.service import config
+
 
 def new_ride_id() -> str:
     """
@@ -38,17 +40,15 @@ class Rides(rpc.RidesServicer):  # type: ignore
 
 
 if __name__ == '__main__':
-    import config
-
     server: Server = grpc.server(ThreadPoolExecutor())
     rpc.add_RidesServicer_to_server(Rides(), server)
-    names = (
+    service_names: tuple[Any, Any] = (
         pb.DESCRIPTOR.services_by_name['Rides'].full_name,
         reflection.SERVICE_NAME,
     )
-    reflection.enable_server_reflection(names, server)
-    addr: str = f'[::]:{config.port}'
-    server.add_insecure_port(addr)
+    reflection.enable_server_reflection(service_names, server)
+    address: str = f'[::]:{config.port}'
+    server.add_insecure_port(address)
     server.start()
-    log.info('server ready on %s', addr)
+    log.info('server ready on %s', address)
     server.wait_for_termination()

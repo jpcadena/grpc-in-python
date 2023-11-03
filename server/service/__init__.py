@@ -1,3 +1,3 @@
 """
-Package server.service initialization.
+Package server-service initialization.
 """

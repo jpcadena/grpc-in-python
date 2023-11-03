@@ -11,8 +11,8 @@ class Error(ValueError):
 
     def __init__(self, field: Any, reason: Any) -> None:
         super().__init__(f'{field}: {reason}')
-        self.field = field
-        self.reason = reason
+        self.field: Any = field
+        self.reason: Any = reason
 
 
 def start_request(request: Any) -> None:

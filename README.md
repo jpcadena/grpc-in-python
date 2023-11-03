@@ -22,8 +22,8 @@
   <p align="center">
     gRPC in Python
     <br />
-    <a href="https://github.com/jpcadena/grpc-in-python"><strong>Explore the 
-docs 
+    <a href="https://github.com/jpcadena/grpc-in-python"><strong>Explore the
+docs
 »</strong></a>
     <br />
   </p>
@@ -112,7 +112,7 @@ gRPC is a modern open source high performance Remote Procedure Call (RPC) framew
 
 1. **Run the scripts:**
 
-   Move to the package to execute any of the scripts, run the following 
+   Move to the package to execute any of the scripts, run the following
    command in your terminal:
 
    ```
@@ -169,7 +169,6 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [project-screenshot]: assets/images/project.png
-[flowchart-diagram]: assets/images/architecture.png
 [python-docs]: https://docs.python.org/3.11/
 
 [//]: # "Shields"

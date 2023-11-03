@@ -1,5 +1,5 @@
 """
-A module for log in the server.service package.
+A module for log in the server-service package.
 """
 import logging
 
