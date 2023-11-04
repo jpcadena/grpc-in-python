@@ -113,10 +113,10 @@ gRPC is a modern open source high performance Remote Procedure Call (RPC) framew
 1. **Run the scripts:**
 
    Move to the package to execute any of the scripts, run the following
-   command in your terminal:
+   command in your terminal given the name of the file:
 
    ```
-   python main.py
+   python filename.py
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
