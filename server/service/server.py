@@ -6,14 +6,12 @@ from typing import Any
 from uuid import uuid4
 
 import grpc
-import log
 import rides_pb2 as pb
 import rides_pb2_grpc as rpc
-import validate
 from grpc._server import _Server as Server
 from grpc_reflection.v1alpha import reflection
 
-from server.service import config
+from server.service import config, log, validate
 
 
 def new_ride_id() -> str:
