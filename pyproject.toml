@@ -71,7 +71,7 @@ google-api-python-client = "^2.108.0"
 grpcio = "^1.59.2"
 grpcio-reflection = "^1.59.2"
 grpcio-tools = "^1.59.2"
-protobuf = "^4.25.0"
+protobuf = "^4.25.1"
 types-protobuf = "^4.24.0.4"
 
 
