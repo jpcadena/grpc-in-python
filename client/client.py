@@ -100,4 +100,4 @@ if __name__ == '__main__':
         )
         log.info('ride ID: %s', ride_id)
     except ClientError as exc:
-        raise SystemExit(f'error: {exc}')
+        raise SystemExit(f'error: {exc}') from exc

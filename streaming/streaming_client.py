@@ -11,7 +11,6 @@ from streaming.event import LocationEvent, rand_events
 
 
 class StreamingClient(Client):
-
     def track(self, events: Generator[LocationEvent, Any, None]) -> None:
         """
         Track events for streaming client
@@ -48,4 +47,4 @@ if __name__ == '__main__':
     try:
         client.track(random_events)
     except ClientError as err:
-        raise SystemExit(f'error: {err}')
+        raise SystemExit(f'error: {err}') from err
