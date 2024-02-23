@@ -391,17 +391,17 @@ protobuf = ["grpcio-tools (>=1.62.0)"]
 
 [[package]]
 name = "grpcio-reflection"
-version = "1.60.1"
+version = "1.62.0"
 description = "Standard Protobuf Reflection Service for gRPC"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "grpcio-reflection-1.60.1.tar.gz", hash = "sha256:bfed4961413821c11b4df102c9eb055ac8c4354626d9dcb110a273efd4cf7d98"},
-    {file = "grpcio_reflection-1.60.1-py3-none-any.whl", hash = "sha256:9e74a35fce3f21861c316c7c42b85f4f950c4ea8a0029da8dda6675d86f68780"},
+    {file = "grpcio-reflection-1.62.0.tar.gz", hash = "sha256:af1707399ef2821c795ecb379550bf5a76fb6409b149ebb346310cfd01da298a"},
+    {file = "grpcio_reflection-1.62.0-py3-none-any.whl", hash = "sha256:89f6d27de7bde8bed925e8badb891904045155a9fd3bef9ce75854da12bff1d8"},
 ]
 
 [package.dependencies]
-grpcio = ">=1.60.1"
+grpcio = ">=1.62.0"
 protobuf = ">=4.21.6"
 
 [[package]]
@@ -965,4 +965,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "bdaaff5a7cd05da7852281860a2203361dcba2a344e58c00cffac73516bf8804"
+content-hash = "ad02afa76bb380906e4f03fea1c3f3637e63579b2368a9eb29a534148bc905fc"
