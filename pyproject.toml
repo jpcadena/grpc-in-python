@@ -70,7 +70,7 @@ pytest = "^8.1.1"
 google-api-python-client = "^2.121.0"
 grpcio = "^1.62.1"
 grpcio-reflection = "^1.62.0"
-grpcio-tools = "^1.62.0"
+grpcio-tools = "^1.62.1"
 protobuf = "^4.25.3"
 types-protobuf = "^4.24.0.20240311"
 
