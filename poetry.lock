@@ -895,13 +895,13 @@ testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jar
 
 [[package]]
 name = "types-protobuf"
-version = "4.24.0.20240311"
+version = "4.24.0.20240408"
 description = "Typing stubs for protobuf"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "types-protobuf-4.24.0.20240311.tar.gz", hash = "sha256:c80426f9fb9b21aee514691e96ab32a5cd694a82e2ac07964b352c3e7e0182bc"},
-    {file = "types_protobuf-4.24.0.20240311-py3-none-any.whl", hash = "sha256:8e039486df058141cb221ab99f88c5878c08cca4376db1d84f63279860aa09cd"},
+    {file = "types-protobuf-4.24.0.20240408.tar.gz", hash = "sha256:c03a44357b03c233c8c5864ce3e07dd9c766a00497d271496923f7ae3cb9e1de"},
+    {file = "types_protobuf-4.24.0.20240408-py3-none-any.whl", hash = "sha256:9b87cd279378693071247227f52e89738af7c8d6f06dbdd749b0cf473c4916ce"},
 ]
 
 [[package]]
@@ -965,4 +965,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "0d4e22ed9e529032c6c4ee8c9de8d423abe24ac80f1909cb8d76c3be600dc991"
+content-hash = "bb51487c0f0217812b62e14f8ca5b6b0eb38f6277c5e97c492ec725d984c1a2f"
