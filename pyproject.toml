@@ -63,7 +63,7 @@ packages = [{include = "grpc_in_python"}]
 python = "^3.11"
 isort = "^5.13.2"
 black = "^24.4.1"
-ruff = "^0.4.1"
+ruff = "^0.4.2"
 mypy = "^1.10.0"
 pre-commit = "^3.7.0"
 pytest = "^8.1.1"
