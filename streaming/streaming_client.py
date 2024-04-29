@@ -1,6 +1,7 @@
 """
 A module for client in the streaming package.
 """
+
 from typing import Any, Generator
 
 import rides_pb2 as pb
@@ -40,11 +41,11 @@ def track_request(event: LocationEvent) -> Any:
     return request
 
 
-if __name__ == '__main__':
-    address: str = f'{config.host}:{config.port}'
+if __name__ == "__main__":
+    address: str = f"{config.host}:{config.port}"
     client: StreamingClient = StreamingClient(address)
     random_events: Generator[LocationEvent, Any, None] = rand_events(7)
     try:
         client.track(random_events)
     except ClientError as err:
-        raise SystemExit(f'error: {err}') from err
+        raise SystemExit(f"error: {err}") from err

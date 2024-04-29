@@ -1,6 +1,7 @@
 """
 A module for validate in the server-service package.
 """
+
 from typing import Any
 
 
@@ -10,7 +11,7 @@ class Error(ValueError):
     """
 
     def __init__(self, field: Any, reason: Any) -> None:
-        super().__init__(f'{field}: {reason}')
+        super().__init__(f"{field}: {reason}")
         self.field: Any = field
         self.reason: Any = reason
 
@@ -24,5 +25,5 @@ def start_request(request: Any) -> None:
     :rtype: NoneType
     """
     if not request.driver_id:
-        raise Error('driver_id', 'empty')
+        raise Error("driver_id", "empty")
     # TODO: Validate more fields

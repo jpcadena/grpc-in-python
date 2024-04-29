@@ -1,6 +1,7 @@
 """
 A module for client in the client package.
 """
+
 from datetime import datetime
 from enum import StrEnum
 from typing import Any
@@ -29,7 +30,7 @@ class Client:
     def __init__(self, address: str):
         self.chan: grpc.Channel = grpc.insecure_channel(address)
         self.stub: RidesStub = rpc.RidesStub(self.chan)
-        log.info('connected to %s', address)
+        log.info("connected to %s", address)
 
     def close(self) -> None:
         """
@@ -72,32 +73,32 @@ class Client:
             car_id=car_id,
             driver_id=driver_id,
             passenger_ids=passenger_ids,
-            type=pb.POOL if _type == 'POOL' else pb.REGULAR,
+            type=pb.POOL if _type == "POOL" else pb.REGULAR,
             location=pb.Location(lat=lat, lng=lng),
         )
         request.time.FromDatetime(time)
-        log.info('ride started: %s', request)
+        log.info("ride started: %s", request)
         try:
             response = self.stub.Start(request, timeout=3)
         except grpc.RpcError as err:
-            log.error('start: %s (%s)', err, err.__class__.__mro__)
-            raise ClientError(f'{err.code()}: {err.details()}') from err
+            log.error("start: %s (%s)", err, err.__class__.__mro__)
+            raise ClientError(f"{err.code()}: {err.details()}") from err
         return response.id
 
 
-if __name__ == '__main__':
-    addr: str = f'{config.host}:{config.port}'
+if __name__ == "__main__":
+    addr: str = f"{config.host}:{config.port}"
     client: Client = Client(addr)
     try:
         ride_id = client.ride_start(
             car_id=7,
-            driver_id='Bond',
-            passenger_ids=['M', 'Q'],
-            _type='POOL',  # type: ignore
+            driver_id="Bond",
+            passenger_ids=["M", "Q"],
+            _type="POOL",  # type: ignore
             lat=51.4871871,
             lng=-0.1266743,
             time=datetime(2021, 9, 30, 20, 15),
         )
-        log.info('ride ID: %s', ride_id)
+        log.info("ride ID: %s", ride_id)
     except ClientError as exc:
-        raise SystemExit(f'error: {exc}') from exc
+        raise SystemExit(f"error: {exc}") from exc
