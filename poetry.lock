@@ -902,13 +902,13 @@ type = ["importlib-metadata (>=7.0.2)", "jaraco.develop (>=7.21)", "mypy (==1.11
 
 [[package]]
 name = "types-protobuf"
-version = "5.27.0.20240907"
+version = "5.27.0.20240920"
 description = "Typing stubs for protobuf"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "types-protobuf-5.27.0.20240907.tar.gz", hash = "sha256:bb6f90f66b18d4d1c75667b6586334b0573a6fcee5eb0142a7348a765a7cbadc"},
-    {file = "types_protobuf-5.27.0.20240907-py3-none-any.whl", hash = "sha256:5443270534cc8072909ef7ad9e1421ccff924ca658749a6396c0c43d64c32676"},
+    {file = "types-protobuf-5.27.0.20240920.tar.gz", hash = "sha256:992d695315d11eb2d25e806122c9e1fd9fec282e96104f0a0cb9226cd5d90293"},
+    {file = "types_protobuf-5.27.0.20240920-py3-none-any.whl", hash = "sha256:c04140bd3c761a55f4e661372b24a6f508169e0815f2b73da33f34b447ed7a8d"},
 ]
 
 [[package]]
@@ -973,4 +973,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "43cfee2a26c23630b3783ba67b955f5f4c6975f8ab78df0f21935e18628d67c1"
+content-hash = "91222a0a81207444214a235d727fa5f8ad7696bb56ab4b00b916296d7329a678"
