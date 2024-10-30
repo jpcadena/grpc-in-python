@@ -63,16 +63,16 @@ packages = [{include = "grpc_in_python"}]
 python = "^3.11"
 isort = "^5.13.2"
 black = "^24.10.0"
-ruff = "^0.7.0"
-mypy = "^1.12.1"
+ruff = "^0.7.1"
+mypy = "^1.13.0"
 pre-commit = "^4.0.1"
 pytest = "^8.3.3"
 google-api-python-client = "^2.149.0"
-grpcio = "^1.67.0"
-grpcio-reflection = "^1.67.0"
-grpcio-tools = "^1.66.2"
-protobuf = "^5.28.2"
-types-protobuf = "^5.28.0.20240924"
+grpcio = "^1.67.1"
+grpcio-reflection = "^1.67.1"
+grpcio-tools = "^1.67.1"
+protobuf = "^5.28.3"
+types-protobuf = "^5.28.3.20241029"
 
 
 [build-system]
