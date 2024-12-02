@@ -66,7 +66,7 @@ black = "^24.10.0"
 ruff = "^0.8.0"
 mypy = "^1.13.0"
 pre-commit = "^4.0.1"
-pytest = "^8.3.3"
+pytest = "^8.3.4"
 google-api-python-client = "^2.154.0"
 grpcio = "^1.68.0"
 grpcio-reflection = "^1.68.0"
@@ -80,7 +80,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dev-dependencies]
-pytest = "^8.3.3"
+pytest = "^8.3.4"
 
 [tool.poetry.urls]
 "gRPC in Python" = "https://github.com/jpcadena/grpc-in-python"
